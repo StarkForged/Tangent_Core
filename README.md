@@ -30,6 +30,10 @@ $env:TMP = $env:TEMP
 python -m pip --python .venv install -r requirements-dev.txt --no-cache-dir
 ```
 
+## Workspace interface
+
+The responsive workspace includes Overview, Data source, Findings, Record explorer, and Methods & guidance. Start with **Explore synthetic demo** for an analyzed example, or upload your own data. Findings expand to show recommendations and link directly to their source records. CSV and JSON exports remain available from report pages. Charts load on demand. Keyboard focus indicators and reduced-motion preferences are supported.
+
 ## Workflow and data contract
 
 1. Upload CSV/JSON or choose **Use synthetic sample**.
