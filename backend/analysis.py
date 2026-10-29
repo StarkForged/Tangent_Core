@@ -1,8 +1,6 @@
 import re
 import pandas as pd
-from sklearn.ensemble import IsolationForest
-from sklearn.cluster import DBSCAN
-from sklearn.preprocessing import StandardScaler
+from .ml import DBSCAN, IsolationForest, StandardScaler
 from .ingestion import prepare
 from .models import Finding, Report
 

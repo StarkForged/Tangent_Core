@@ -24,7 +24,7 @@ if sys.platform == 'win32':
     counters.cb = ctypes.sizeof(counters)
     if ctypes.windll.psapi.GetProcessMemoryInfo(ctypes.c_void_p(-1), ctypes.byref(counters), counters.cb):
         peak_rss = counters.peak_rss
-packages = ['fastapi', 'starlette', 'pydantic', 'pydantic-core', 'numpy', 'pandas', 'scipy', 'scikit-learn', 'uvicorn']
+packages = ['fastapi', 'starlette', 'pydantic', 'pydantic-core', 'numpy', 'pandas', 'uvicorn']
 sizes = {}
 for name in packages:
     dist = metadata.distribution(name)

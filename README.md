@@ -1,6 +1,6 @@
 # TangentCore Routing Insight & Exception Analyzer
 
-A functional, read-only routing investigation app: Python/FastAPI, React/Vite, Tailwind CSS, Pandas/NumPy, scikit-learn Isolation Forest and DBSCAN, and Recharts. No database, AI API, credentials, production connection, or permanent server-side dataset storage.
+A functional, read-only routing investigation app: Python/FastAPI, React/Vite, Tailwind CSS, Pandas/NumPy, Isolation Forest and DBSCAN (NumPy implementations in `backend/ml.py`), and Recharts. No database, AI API, credentials, production connection, or permanent server-side dataset storage.
 
 ## Run locally (Windows PowerShell)
 
