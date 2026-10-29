@@ -91,7 +91,7 @@ Time trends use observed UTC hourly/daily buckets only, show counts and denomina
 
 ## Vercel and GitHub
 
-`vercel.json` builds Vite into `dist` and routes `/api/*` to `api/index.py` (FastAPI). Root `requirements.txt` supplies runtime dependencies, with resolved versions constrained by `runtime-constraints.txt`. Development dependencies are separate. Vercel's function request/response limit is 4.5 MB and Python bundle limit is 500 MB; this app caps requests at 1 MB, rows at 2,000 and report responses at 4 MB. Scientific dependencies can cause cold starts. DBSCAN is bounded by the row limit, but processing remains subject to available execution/memory limits.
+`vercel.json` builds Vite into `dist` and routes `/api/*` to `api/index.py` (FastAPI). Root `requirements.txt` supplies the exact pinned runtime dependencies. Development dependencies are separate. Vercel's function request/response limit is 4.5 MB and Python bundle limit is 500 MB; this app caps requests at 1 MB, rows at 2,000 and report responses at 4 MB. Scientific dependencies can cause cold starts. DBSCAN is bounded by the row limit, but processing remains subject to available execution/memory limits.
 
 Publishing is intentionally deferred at the user's request until their Git account is switched. No commits, pushes, remote changes or deployments were made during this improvement. When ready, confirm the destination repository/account before publishing (never commit operational datasets):
 
